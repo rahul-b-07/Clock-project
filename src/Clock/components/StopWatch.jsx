@@ -52,7 +52,7 @@ function StopWatch({ swTime, setSwTime, pad }) {
                 <div className="sec">{pad(swTime.millisec)}</div>
             </div>
             <div className="outer-content">
-                <button className="start" onClick={() => setSwStart(prev => !prev)}>Start</button>
+                <button className="start" onClick={() => setSwStart(prev => !prev)}>{!swStart ? "Start" : "Stop"}</button>
                 <button className="lap" onClick={addToLap}>Lap</button>
                 <button className="reset" onClick={() => { setSwStart(false); setSwTime({ hr: 0, min: 0, sec: 0, millisec: 0 }); setLap([]) }}>Reset</button>
             </div>

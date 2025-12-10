@@ -1,0 +1,142 @@
+#root {
+    align-content: center;
+    justify-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(151, 151, 151);
+}
+
+.content {
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 330px;
+    min-height: 240px;
+    text-align: center;
+    color: rgb(202, 202, 202);
+    display: flexbox;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(50, 50, 50);
+}
+
+.inner-content,
+.outer-content {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    background-color: rgb(63, 63, 63);
+    border: 2px solid rgb(63, 63, 63);
+    padding: 10px;
+    margin: 20px 5px 0px 5px ;
+    font-size: 30px;
+    color: black;
+}
+
+.inp-hr,.inp-min,.inp-sec,.inp-name{
+    border-radius: 6px;
+    border: 2px solid rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
+    color: black;
+    padding: 0.1em 0em;
+    font-size: 30px;
+    text-align: center;
+    width: 80px;
+}
+
+.title{
+    font-style:italic;
+}
+
+.hr,
+.min,
+.sec,
+.millisec {
+    border-radius: 6px;
+    border: 2px solid rgb(105, 105, 105);
+    background-color: rgb(105, 105, 105);
+    color: black;
+    padding: 0.1em 0em;
+    font-size: 30px;
+    min-width: 80px;
+}
+
+.start,
+.stop {
+    background-color: red;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px 20px;
+    min-width: 95px;
+    border: none;
+}
+
+.lap,
+.reset {
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 10px;
+    min-width: 80px;
+    border: none;
+}
+
+.reset {
+    background-color: rgba(205, 198, 198, 0.573);
+}
+
+.stop {
+    background-color: rgb(160, 19, 19);
+}
+
+.start:hover,
+.lap:hover,
+.reset:hover {
+    opacity: 0.6;
+}
+
+.stop:hover {
+    box-shadow: 50px;
+}
+
+.lap-children p {
+    display: inline;
+}
+
+.lap-content {
+    justify-items: center;
+    position: absolute;
+    padding: 0px 20px;
+    min-width: 330px;
+}
+
+.lap-children {
+    list-style: none;
+    border: solid 10px rgb(50, 50, 50);
+    border-radius: 8px;
+    padding: 0px 20px;
+    background-color: rgb(63, 63, 63);
+    margin: 0px;
+    width: 250px;
+}
+
+.lap-children li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    gap: 100px;
+}
+
+.set-timer{
+    padding: 20px;
+}
+
+.set-timer input{
+    width: 40px;
+    height: 25px;
+}
